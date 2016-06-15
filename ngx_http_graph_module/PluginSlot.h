@@ -77,7 +77,7 @@ struct plugin_info_t {
 	std::string _conf;
 	std::string _model_dir;
 
-    /* Add(20160413-aextp-1) by dongyue.zdy@alibaba-inc.com 
+    /* Add(20160413-aextp-1) by dongyue.zdy 
      * when process_handler has more than two parameters,
      * another input parameters is in one string(_ext_input) 
      * by json or any method defined by user

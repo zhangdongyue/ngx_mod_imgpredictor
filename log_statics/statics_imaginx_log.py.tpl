@@ -3,14 +3,14 @@
 # coding:utf-8
 
 #==============================================
-#Copyright (c) Alibaba-Inc. All Rights Reserved.
+#Copyright (c) DONGYUE.ZDY. All Rights Reserved.
 #==============================================
 
 #----------------------------------------------
 # @File:statics_imginx_log.py
 # @Author:dongyue.zippy
 # @Date:2016-03-08 10:25:00
-# @Mailto:dongyue.zdy@alibaba-inc.com
+# @Mailto:zhangdy1986@gmail.com
 # @Brief:imaginx server log statics 
 #----------------------------------------------
 
@@ -161,12 +161,10 @@ def log_statics(log_file,step_seconds):
     global plugin_dict
     global res
 
-	#db=MySQLdb.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",
-    
     
     try:
-        db=_mysql.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",\
-                          passwd="mysqld", db="dashboard")
+        db=_mysql.connect(host="host",user="xxx",\
+                          passwd="psss", db="xxxx")
     except:
         print "connect to db failed."
     
@@ -254,8 +252,8 @@ def log_statics(log_file,step_seconds):
 
     """
 	##mysql 
-	db=_mysql.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",
-			passwd="mysqld", db="dashboard")
+	db=_mysql.connect(host="xxxx",user="xxxx",
+			passwd="xxxx", db="xxxxx")
 
 	db.query(r"select * from nginx_test")
 

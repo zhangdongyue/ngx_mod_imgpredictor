@@ -161,12 +161,12 @@ def log_statics(log_file,step_seconds):
     global plugin_dict
     global res
 
-	#db=MySQLdb.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",
+	#db=MySQLdb.connect(host="host",user="user",
     
     
     try:
-        db=_mysql.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",\
-                          passwd="mysqld", db="dashboard")
+        db=_mysql.connect(host="host",user="xxx",\
+                          passwd="xxx", db="xxxx")
     except:
         print "connect to db failed."
     
@@ -254,8 +254,8 @@ def log_statics(log_file,step_seconds):
 
     """
 	##mysql 
-	db=_mysql.connect(host="dashboard.mysql.rds.tbsite.net",user="rmark",
-			passwd="mysqld", db="dashboard")
+	db=_mysql.connect(host="host",user="user",
+			passwd="psswd", db="db")
 
 	db.query(r"select * from nginx_test")
 
